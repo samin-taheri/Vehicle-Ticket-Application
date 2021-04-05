@@ -45,12 +45,14 @@ public class RegisterActivity extends AppCompatActivity {
         if (!password.equals(confirmPassword)){
             Toast.makeText(RegisterActivity.this, "Passwords don't match.", Toast.LENGTH_SHORT).show();
         }else{
+            Intent mainIntent = new Intent(this, MainActivity.class);
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         FirebaseUser user = mAuth.getCurrentUser();
-                        System.out.println(user.getEmail());
+                       // System.out.println(user.getEmail());
+                        startActivity(mainIntent);
                     }else{
                         Toast.makeText(RegisterActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
