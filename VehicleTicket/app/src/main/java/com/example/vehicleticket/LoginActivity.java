@@ -37,6 +37,10 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RegisterActivity.class);
         startActivity(intent);
     }
+    public void navigateResetPassword(View view){
+        Intent intent = new Intent(this, ResetPasswordActivity.class);
+        startActivity(intent);
+    }
 
     public void login(View view){
         EditText editTextEmail = (EditText) findViewById(R.id.login_editTextEmail);
