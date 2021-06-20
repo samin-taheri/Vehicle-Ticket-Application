@@ -116,7 +116,7 @@ public class PassengerDetailsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void createUser(View view){
+    public void createUser2(View view){
         EditText editTextEmail = (EditText) findViewById(R.id.register_editTextEmail_p);
         String email = editTextEmail.getText().toString();
 

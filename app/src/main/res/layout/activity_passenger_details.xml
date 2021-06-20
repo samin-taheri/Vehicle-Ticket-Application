@@ -201,7 +201,7 @@
                 android:layout_marginEnd="80dp"
                 android:layout_marginRight="80dp"
                 android:background="@drawable/custom_button"
-                android:onClick="createUser"
+                android:onClick="createUser2"
                 android:text="Continue"
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -43,14 +42,6 @@ public class RegisterActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Don't have an account?");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Button button_register = findViewById(R.id.register_Button);
-        button_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(RegisterActivity.this, ProfileActivity.class);
-                startActivity(intent3);
-            }
-        });
 
         EditText mDisplayDate =(EditText)findViewById(R.id.register_birthday);
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
@@ -113,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         User userInfo = new User(name, birthday, phone, passport, address);
 
-       // User userInfo = new User(name);
+        // User userInfo = new User(name);
 
         if (!password.equals(confirmPassword)){
             Toast.makeText(RegisterActivity.this, "Passwords don't match.", Toast.LENGTH_SHORT).show();
