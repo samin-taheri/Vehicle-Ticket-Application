@@ -15,6 +15,7 @@ public class TicketInformation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Ticket Information");
         setContentView(R.layout.activity_ticket_information);
         if(getIntent().hasExtra("startCity")){
             startCity = getIntent().getStringExtra("startCity");

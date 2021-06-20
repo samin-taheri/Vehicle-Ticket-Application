@@ -97,11 +97,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         };
         newsQuery.addListenerForSingleValueEvent(newsListener);
 
-
-
-
-
-
         RecyclerView recyclerView1 = findViewById(R.id.announcementList);
         DatabaseReference announcementRef = database.getReference("announcement");
 
@@ -131,11 +126,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         };
 
         announcementQuery.addListenerForSingleValueEvent(announcementListener);
-
-
-
-
-
 
         EditText mDisplayDate =(EditText)  findViewById(R.id.editTextDate);
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
@@ -216,6 +206,4 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-
-
 }

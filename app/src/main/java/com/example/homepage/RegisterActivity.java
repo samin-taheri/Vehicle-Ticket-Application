@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         button_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(RegisterActivity.this, CardFormActivity.class);
+                Intent intent3 = new Intent(RegisterActivity.this, ProfileActivity.class);
                 startActivity(intent3);
             }
         });
