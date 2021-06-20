@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_flight"
+    android:layout_width="400dp"
+    android:layout_height="180dp"
+    android:layout_margin="4dp"
+    android:layout_marginEnd="100dp"
+    android:layout_marginRight="100dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_flight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDE7F8"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/startCity"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="39dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/endCity"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="39dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/flight_date"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="84dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/arrivalTime"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="84dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/flight_price"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="130dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="186dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="39dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="125dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

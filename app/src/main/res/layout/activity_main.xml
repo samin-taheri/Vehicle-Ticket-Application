@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="205.5dp"
+        app:srcCompat="@drawable/logo36"/>
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/gradient_background"
+        android:layout_above="@id/bottom_navigation">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableStart="@drawable/ic_my_location"
+                    android:drawableLeft="@drawable/ic_my_location"
+                    android:drawablePadding="5dp" />
+
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:drawableStart="@drawable/ic_location_on"
+                    android:drawableLeft="@drawable/ic_location_on"
+                    android:drawablePadding="5dp" />
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Select a date"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="341dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_button"
+                    android:textAllCaps="false"
+                    android:text="Search" />
+
+                <TextView
+                    android:id="@+id/text_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:text="News"
+                    android:textColor="#5F4B8B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/newsBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/text_announcement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:text="Announcements"
+                    android:textColor="#5F4B8B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/announcementList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/nav_menu" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/bottom_navigation"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50sp"/>
+
+</RelativeLayout>
